@@ -1,14 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LABI</title>
     <link rel="stylesheet" href="./src/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    <div class="container2">
-        
-    </div>
+
+    <header class="py-[11px] text-1">
+        <div class="container2 flex justify-between items-center">
+            <a href="./index.html"><img src="assets/img/logo.png" alt="" class="w-[80%]"></a>
+
+            <nav class="flex justify-center items-center gap-[20px] max-[760px]:hidden">
+                <a href="mailto:welcome@labi.agency" class="hover:text-2">welcome@labi.agency</a>
+
+                <a href="tel:+7 921 366 04 32" class="flex justify-center items-center gap-[10px] hover:text-2">+7 921
+                    366 04 32 <img src="./assets/svg/tel.svg" alt=""></a>
+            </nav>
+
+            <nav class="flex justify-center items-center gap-[40px]">
+                <a href="#!" class="btn max-[360px]:hidden">Заказать звонок</a>
+
+                <label for="nav" class="text-[23px] cursor-pointer hover:text-[#0F265C] transition-none">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+        </div>
+
+        <input type="checkbox" name="" id="nav" class="hidden">
+        <nav
+            class="flex flex-col justify-center items-start p-[20px] gap-[10px] fixed h-[100vh] w-[60%] max-[670px]:w-[80%] max-[370px]:w-[100%] top-0 left-[-100%] bg-white z-[888]">
+
+            <label for="nav"
+                class="text-[25px] opacity-50 right-[20px] top-[20px] absolute cursor-pointer hover:text-2 hover:opacity-100">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="py-[10px] border-b border-1 w-full border-opacity-40">
+                <li><a href="#!" class="hover:text-2">Главная</a></li>
+                <li><a href="#!" class="hover:text-2">Услуги</a></li>
+                <li><a href="#!" class="hover:text-2">Тех. требования</a></li>
+                <li><a href="#!" class="hover:text-2">О нас</a></li>
+                <li><a href="#!" class="hover:text-2">Вакансии</a></li>
+                <li><a href="#!" class="hover:text-2">Контакты</a></li>
+            </ul>
+
+            <ul class="py-[10px] border-b border-1 w-full border-opacity-40">
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">Типография</a></li>
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">Выставки</a></li>
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">Дизайн и диджитал</a></li>
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">Производство рекламы</a></li>
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">Сувенирная продукция</a></li>
+                <li><a href="#!" class="hover:text-2 text-[18px] font-[600]">BTL</a></li>
+            </ul>
+
+            <ul class="py-[10px]">
+                <li><a href="./index.html" class="hover:text-2"><img src="./assets/img/logo.png" alt=""
+                            class="w-[40px]"></a></li>
+                <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-phone text-[12px]"></i> +7 921 366 04 32</a>
+                </li>
+                <li><a href="#!" class="hover:text-2"><i class="fa-regular fa-envelope text-[14px]"></i>
+                        welcome@labi.agency</a></li>
+                <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-location-dot text-[14px]"></i> г.
+                        Санкт-Петербург</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav"
+            class="hidden blur h-[100vh] w-full bg-[#00000011] backdrop-blur-[5px] z-[777] fixed top-0 left-0"></label>
+    </header>
+
+    <section class="showcase p-[100px_0px_0px_0px]">
+        <div
+            class="container2 flex flex-col justify-center items-start gap-[15px] max-[640px]:justify-center max-[640px]:items-center max-[640px]:text-center">
+            <h1
+                class="text-[40px] leading-[120%] font-[600] max-[640px]:text-[25px] max-[640px]:text-center max-[340px]:text-[18px]">
+                Мы
+                дополняем Вашу задачу <br class="max-[640px]:hidden"> нашим дизайном</h1>
+
+            <p class="max-[340px]:text-[14px]">Рекламно-производственная компания и комплексное рекламное агентство</p>
+
+            <div class="flex justify-start items-center gap-[10px] max-[455px]:flex-col">
+                <a href="#!" class="btn bg-2 text-white max-[455px]:w-full">Оставить заявку</a>
+                <a href="#!" class="btn">Рассчитать стоимость</a>
+            </div>
+
+
+            <div class="pt-[120px] w-full max-[630px]:hidden">
+                <h1 class="flex justify-start items-center gap-[10px] text-[18px] font-[600]"><img
+                        src="./assets/svg/up.svg" alt="">Акции и спецпредложения</h1>
+                <div class="flex justify-between items-center w-full pt-[15px] max-[945px]:hidden">
+                    <a href="#!" class="text-[#7A7A7A] hover:text-2">Сезон календарей</a>
+                    <a href="#!" class="text-[#7A7A7A] hover:text-2">Табличка в подарок</a>
+                    <a href="#!" class="text-[#7A7A7A] hover:text-2">Продукция для печати и рекламы</a>
+                    <a href="#!" class="text-[#7A7A7A] hover:text-2">Визуализация выставочного стенда</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog py-[40px]">
+        <div class="container2">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/1.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/2.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/3.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/4.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/5.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="swiper-slide">
+                        <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                            <img src="./assets/img/showcase/6.png" alt="" class="w-full h-[120px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-[20px]">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/7.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/8.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/9.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/10.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/3.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="swiper-slide">
+                            <div class="h-[120px] bg-2 flex justify-center items-center overflow-hidden">
+                                <img src="./assets/img/showcase/2.png" alt="" class="w-full h-[120px]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="statistic text-1 py-[20px]">
+        <div class="container2 flex flex-col justify-start items-start gap-[50px]">
+            <div class="flex flex-col justify-start items-start gap-[10px] w-[50%] max-[980px]:w-full">
+                <h1 class="text-[25px] font-[600] max-[400px]:text-[20px]"><span class="text-2">LA</span><span
+                        class="text-3">BI</span> — значит
+                    «хорошо»</h1>
+
+                <p>Именно так мы делаем нашу работу. Качественно и ответственно</p>
+
+                <p>
+                    А ещё это искусный и умелый. В LABI мы считаем, что это достаточно важные качества для
+                    рекламно-производственной
+                    компании
+                    <br>
+                    И ещё это можно перевести, как удачный. Именно такой выбор
+                    вы сделаете, начав сотрудничество с LABI agency
+                </p>
+            </div>
+
+            <div
+                class="grid grid-cols-4 gap-[20px] w-full max-[840px]:grid-cols-2 max-[840px]:gap-[30px] max-[420px]:flex max-[420px]:flex-col max-[420px]:justify-center max-[420px]:items-center">
+                <div
+                    class="flex flex-col justify-start items-start gap-[5px] max-[420px]:items-center max-[420px]:border max-[420px]:w-full max-[420px]:p-[20px]">
+                    <p class="flex justify-start items-center gap-[5px] font-[500]"><img src="./assets/svg/up.svg"
+                            alt="" class="w-[10px]">Опыт</p>
+
+                    <h1 class="text-[40px] font-[600]">
+                        15+
+                    </h1>
+
+                    <small class="font-[600]">Более 15 лет опыта</small>
+
+                </div>
+
+                <div
+                    class="flex flex-col justify-start items-start gap-[5px] max-[420px]:items-center max-[420px]:border max-[420px]:w-full max-[420px]:p-[20px]">
+                    <p class="flex justify-start items-center gap-[5px] font-[500]"><img src="./assets/svg/up.svg"
+                            alt="" class="w-[10px]">Клиенты</p>
+
+                    <h1 class="text-[40px] font-[600]">
+                        680
+                    </h1>
+
+                    <small class="font-[600]">Сотни довольных клиентов</small>
+
+                </div>
+
+
+                <div
+                    class="flex flex-col justify-start items-start gap-[5px] max-[420px]:items-center max-[420px]:border max-[420px]:w-full max-[420px]:p-[20px]">
+                    <p class="flex justify-start items-center gap-[5px] font-[500]"><img src="./assets/svg/up.svg"
+                            alt="" class="w-[10px]">Проекты</p>
+
+                    <h1 class="text-[40px] font-[600]">
+                        3127
+                    </h1>
+
+                    <small class="font-[600]">Тысячи проектов</small>
+
+                </div>
+
+
+                <div
+                    class="flex flex-col justify-start items-start gap-[5px] max-[420px]:items-center max-[420px]:border max-[420px]:w-full max-[420px]:p-[20px]">
+                    <p class="flex justify-start items-center gap-[5px] font-[500]"><img src="./assets/svg/up.svg"
+                            alt="" class="w-[10px]">Пункты выдачи</p>
+
+                    <h1 class="text-[40px] font-[600]">
+                        2793
+                    </h1>
+
+                    <small class="font-[600]">Множество пунктов выдачи</small>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work bg-[#F8F8F8] py-[30px]">
+        <div class="container2 flex flex-col justify-center items-center gap-[30px]">
+
+            <h1 class="self-start text-[25px] font-[600] max-[400px]:text-[20px]">С <span class="text-2">LA</span><span
+                    class="text-3">BI</span> выгодно работать</h1>
+
+            <div class="grid grid-cols-2 w-full max-[1020px]:flex max-[1020px]:flex-col">
+                <div class="felx-1 bg-[url(../assets/img/advantages.png)] bg-center bg-cover max-[1020px]:hidden">
+                </div>
+
+                <div class="felx-1 grid grid-cols-2 bg-white gap-[40px_20px] p-[25px] max-[600px]:grid-cols-1">
+                    <div class="flex flex-col justify-start items-start gap-[6px]">
+                        <img src="./assets/svg/1.svg" alt="">
+                        <p class="flex justify-start items-center gap-[4px] font-[500] max-[400px]:text-[15px]"><img
+                                src="./assets/svg/up.svg" alt="" class="w-[10px]">Комплексный подход</p>
+                        <p class="opacity-80 max-[400px]:text-[14px]">
+                            Мы можем и любим решать комплексные задачи наших клиентов. <span
+                                class="max-[350px]:hidden">От печати полиграфии или дизайна
+                                до
+                                масштабной рекламной
+                                кампании</span>
+                        </p>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="flex flex-col justify-start items-start gap-[6px]">
+                        <img src="./assets/svg/2.svg" alt="">
+
+                        <p class="flex justify-start items-center gap-[4px] font-[500] max-[400px]:text-[15px]"><img
+                                src="./assets/svg/up.svg" alt="" class="w-[10px]">Комплексный подход</p>
+                        <p class="opacity-80 max-[400px]:text-[14px]">
+                            Мы можем и любим решать комплексные задачи наших клиентов. <span
+                                class="max-[350px]:hidden">От печати полиграфии или дизайна
+                                до
+                                масштабной рекламной
+                                кампании</span>
+                        </p>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="flex flex-col justify-start items-start gap-[6px]">
+                        <img src="./assets/svg/3.svg" alt="">
+
+                        <p class="flex justify-start items-center gap-[4px] font-[500] max-[400px]:text-[15px]"><img
+                                src="./assets/svg/up.svg" alt="" class="w-[10px]">Соблюдаем сроки</p>
+                        <p class="opacity-80 max-[400px]:text-[14px]">
+                            Мы можем и любим решать комплексные задачи наших клиентов. <span
+                                class="max-[350px]:hidden">От печати полиграфии или дизайна
+                                до
+                                масштабной рекламной
+                                кампании</span>
+                        </p>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="flex flex-col justify-start items-start gap-[6px]">
+                        <img src="./assets/svg/4.svg" alt="">
+
+                        <p class="flex justify-start items-center gap-[4px] font-[500] max-[400px]:text-[15px]"><img
+                                src="./assets/svg/up.svg" alt="" class="w-[10px]">Опыт работы более 15 лет</p>
+                        <p class="opacity-80 max-[400px]:text-[14px]">
+                            Мы можем и любим решать комплексные задачи наших клиентов. <span
+                                class="max-[350px]:hidden">От печати полиграфии или дизайна
+                                до
+                                масштабной рекламной
+                                кампании</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info py-[100px]">
+        <div class="container2 flex flex-col justify-start items-start gap-[30px]">
+            <h1 class="text-[30px] font-[700] max-[400px]:text-[20px]">Как мы работаем</h1>
+
+            <div
+                class="grid grid-cols-6 gap-[10px] max-[1230px]:grid-cols-3 max-[1230px]:gap-[30px] max-[640px]:grid-cols-2 max-[420px]:flex max-[420px]:w-full max-[420px]:flex-col max-[420px]:justify-center max-[420px]:items-center">
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/1.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Вы отправляете заявку нам в офис</p>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/2.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Оцениваем стоимость и сроки заказа</p>
+                </div>
+
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/4.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Вы совершаете оплату, мы ее принимаем</p>
+                </div>
+
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/3.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Разрабатываем и правим макеты</p>
+                </div>
+
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/5.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Мы запускаем и создаем продукт</p>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[10px] max-[420px]:w-full max-[420px]:p-[20px] max-[420px]:border">
+                    <img src="./assets/svg/work/6.svg" alt="">
+
+                    <p class="text-center leading-[120%]">Вы получаете заказ способом</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog py-[50px]">
+        <div class="container2 flex flex-col justify-start items-start gap-[30px]">
+            <h1 class="text-[30px] font-[700] max-[400px]:text-[20px]">Примеры работ</h1>
+
+
+
+            <div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Top Left Image -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-[230px]">
+                    <img src="./assets/img/grid/grid1.png" alt="Adidas" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Top Right Image -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-[200px]">
+                    <img src="./assets/img/grid/grid2.png" alt="Creative Co" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Bottom Left Image -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-[230px] flex justify-end items-end">
+                    <img src="./assets/img/grid/grid3.png" alt="Weiss" class="w-full h-[90%] object-cover">
+                </div>
+
+                <!-- Bottom Right Image -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-[230px]">
+                    <img src="./assets/img/grid/grid4.png" alt="Change by Design" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsors py-[30px]">
+        <div class="container2 flex flex-col justify-start items-start gap-[50px]">
+            <h1 class="text-[30px] font-[600] max-[400px]:text-[20px]">Нам доверяют</h1>
+
+            <div class="w-full">
+                <!-- Swiper -->
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center gap-[40px]">
+                                <img src="./assets/img/spomsor/1.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/2.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/3.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/4.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/5.svg" alt="" class="w-[30%] grayscale-[100]">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center gap-[40px]">
+                                <img src="./assets/img/spomsor/2.1.png" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/2.2.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/2.3.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/2.4.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/2.5.png" alt="" class="w-[30%] grayscale-[100]">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center gap-[40px]">
+                                <img src="./assets/img/spomsor/3.1.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/3.2.svg" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/3.3.png" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/3.4.png" alt="" class="w-[30%] grayscale-[100]">
+                                <img src="./assets/img/spomsor/3.5.svg" alt="" class="w-[30%] grayscale-[100]">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <section class="form py-[50px] text-1">
+        <div class="container2">
+            <div class="grid grid-cols-2 w-full max-[770px]:grid-cols-1">
+                <div class="max-[770px]:hidden">
+                    <img src="./assets/img/aplication.png" alt="" class="w-full h-full object-cover">
+                </div>
+
+                <div class="flex flex-col justify-between items-start px-[20px] max-[770px]:gap-[20px] max-[350px]:p-0">
+                    <h1 class="text-[27px] font-[600] max-[400px]:text-[17px]">Возникла идея? Свяжитесь с нами!</h1>
+
+                    <ul class="py-[10px] flex flex-col justify-start items-start gap-[10px]">
+                        <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-phone text-[12px]"></i> +7 921 366
+                                04 32</a>
+                        </li>
+                        <li><a href="#!" class="hover:text-2"><i class="fa-regular fa-envelope text-[14px]"></i>
+                                welcome@labi.agency</a></li>
+                        <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-location-dot text-[14px]"></i> г.
+                                Санкт-Петербург</a></li>
+                    </ul>
+
+                    <h1 class="text-[27px] font-[600] max-[400px]:text-[17px]">Оставьте заявку</h1>
+                    <small class="font-[400] max-[770px]:hidden">Наш менеджер свяжется с вами в течение 30 минут</small>
+
+                    <form action="" class="w-full flex flex-col gap-[10px]">
+                        <input type="text" placeholder="Ваше имя"
+                            class="p-[5px_10px] w-full outline-none border-none bg-[#F3F3F3]">
+                        <input type="email" placeholder="Адрес почты"
+                            class="p-[5px_10px] w-full outline-none border-none bg-[#F3F3F3]">
+                        <input type="text" placeholder="Номер телефона"
+                            class="p-[5px_10px] w-full outline-none border-none bg-[#F3F3F3]">
+                        <button type="submit" class="p-[5px_10px] w-full bg-2 text-white cursor-pointer">Оставить
+                            заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-[30px] bg-[#F3F3F3] text-1 opacity-60">
+        <div class="container2">
+            <div class="grid grid-cols-4 gap-[30px] max-[1076px]:grid-cols-3 max-[780px]:grid-cols-2 max-[490px]:grid-cols-1">
+                <div class="flex flex-col justify-start items-start gap-[10px] max-[1076px]:order-10">
+                    <a href="./index.html"><img src="./assets/img/logo.png" alt="" class="w-[60px]"></a>
+                    <ul class="flex flex-col justify-start items-start gap-[10px]">
+                        <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-phone text-[12px]"></i> +7 921 366
+                                04 32</a>
+                        </li>
+                        <li><a href="#!" class="hover:text-2"><i class="fa-regular fa-envelope text-[14px]"></i>
+                                welcome@labi.agency</a></li>
+                        <li><a href="#!" class="hover:text-2"><i class="fa-solid fa-location-dot text-[14px]"></i> г.
+                                Санкт-Петербург</a></li>
+                    </ul>
+                </div>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">Типография</h3>
+                    <li><a href="#!">Наклейки</a></li>
+                    <li><a href="#!">Открытки</a></li>
+                    <li><a href="#!">Плакаты и афиши</a></li>
+                    <li><a href="#!">Дипломы и грамоты</a></li>
+                    <li><a href="#!">Календари</a></li>
+                    <li><a href="#!">Каталоги и буклеты</a></li>
+                    <li><a href="#!">Листовки</a></li>
+                    <li><a href="#!">Визитки</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">Выставки</h3>
+                    <li><a href="#!">Указатели и буклетницы</a></li>
+                    <li><a href="#!">Промостойки и торговые</a></li>
+                    <li><a href="#!">Оформление мероприятий</a></li>
+                    <li><a href="#!">Дипломы и грамоты</a></li>
+                    <li><a href="#!">Выставочные стенды</a></li>
+                    <li><a href="#!">Аренда выставочного</a></li>
+                    <li><a href="#!">Стенды press wall</a></li>
+                    <li><a href="#!">Мобильные стены</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">Дизайн и Диджитал</h3>
+                    <li><a href="#!">Администрирование</a></li>
+                    <li><a href="#!">СЕО-оптимизация</a></li>
+                    <li><a href="#!">Доработка сайта</a></li>
+                    <li><a href="#!">Интернет-магазины</a></li>
+                    <li><a href="#!">Контекстная реклама</a></li>
+                    <li><a href="#!">Баннеры (вэб)</a></li>
+                    <li><a href="#!">Создание сайтов</a></li>
+                    <li><a href="#!">Дизайн полиграфии</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px] max-[1076px]:order-2">
+                    <h3 class="font-[600] text-black opacity-100">Главная</h3>
+                    <h3 class="font-[600] text-black opacity-100">Услуги</h3>
+                    <h3 class="font-[600] text-black opacity-100">Тех. требования</h3>
+                    <h3 class="font-[600] text-black opacity-100">О нас</h3>
+                    <h3 class="font-[600] text-black opacity-100">Вакансии</h3>
+                    <h3 class="font-[600] text-black opacity-100">Контакты</h3>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">Производство рекламы </h3>
+                    <li><a href="#!">Брендирование</a></li>
+                    <li><a href="#!">Оформление офисов </a></li>
+                    <li><a href="#!">Баннеры</a></li>
+                    <li><a href="#!">Брендирование контейнеров</a></li>
+                    <li><a href="#!">Информационные стенды</a></li>
+                    <li><a href="#!">Таблички</a></li>
+                    <li><a href="#!">Оформление витрин</a></li>
+                    <li><a href="#!">Объемные буквы и вывески</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">Сувенирная продукция </h3>
+                    <li><a href="#!">Ланьярды и бирки</a></li>
+                    <li><a href="#!">Корпоративные подарки</a></li>
+                    <li><a href="#!">Награды</a></li>
+                    <li><a href="#!">Текстиль (футболки и кепки)</a></li>
+                    <li><a href="#!">Пакеты с логотипом</a></li>
+                    <li><a href="#!">Подарочные наборы</a></li>
+                    <li><a href="#!">Ежедневники и блокноты</a></li>
+                    <li><a href="#!">Кружки</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[8px]">
+                    <h3 class="font-[600] text-black opacity-100">BTL</h3>
+                    <li><a href="#!">Дорхенгеры</a></li>
+                    <li><a href="#!">Корпоративные </a></li>
+                    <li><a href="#!">мероприятия</a></li>
+                    <li><a href="#!">Церемонии открытия</a></li>
+                    <li><a href="#!">Безадресная рассылка</a></li>
+                    <li><a href="#!">Тайный покупатель</a></li>
+                    <li><a href="#!">Ростовые куклы</a></li>
+                    <li><a href="#!">Дегустации</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
